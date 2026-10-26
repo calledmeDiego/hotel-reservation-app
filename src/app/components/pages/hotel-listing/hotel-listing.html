@@ -1,0 +1,106 @@
+<div class="ptb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-12">
+        <!-- sidebar -->
+        <div class="left-sidebar">
+          <div class="single-widget">
+            <h3>Buscar aquí</h3>
+            <form action="">
+              <mat-form-field appearance="fill" class="lugar-field">
+                <input matInput type="text" name="lugar" class="lugar-input" placeholder="Buscar" />
+              </mat-form-field>
+              <button type="button" class="src-btn"><mat-icon matSuffix>search</mat-icon></button>
+            </form>
+          </div>
+
+          <div class="single-widget">
+            <h3>Precio</h3>
+            <select class="form-select" name="" id="">
+              <option selected>$100</option>
+              <option value="1">$200</option>
+              <option value="2">$300</option>
+              <option value="3">$400</option>
+              <option value="4">$500</option>
+            </select>
+          </div>
+        </div>
+        <p>sidebar</p>
+      </div>
+      <div class="col-lg-9 col-md-12">
+        <!-- hotels list -->
+        <div class="hotels-listing">
+          <ul class="d-flex justify-content-between sorting saber-como">
+            <li class="">
+              <span>30 hoteles</span>
+            </li>
+            <li class="">
+              <mat-form-field appearance="outline" class="sorting-select" subscriptSizing="dynamic">
+                <mat-select aria-label="Ordenar hoteles" [(value)]="selected" class="select-algo">
+                  <mat-option value="default"> Ordenado por defecto </mat-option>
+
+                  <mat-option value="price-desc"> Mayor a menor precio </mat-option>
+
+                  <mat-option value="price-asc"> Menor a mayor precio </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </li>
+          </ul>
+          <ul class="hotels-list">
+            <li class="single-hotel-box">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-xl-5 col-lg-12 col-sm-12">
+                  <a href="" class="d-block">
+                    <img src="images/hotels/hotel1.jpg" alt="" width="300" height="300"/>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-sm-7">
+                  <div class="content">
+                    <h3>
+                      <a>Hotel California</a>
+                    </h3>
+                    <p>Los Ángeles 322, California</p>
+                    <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <p>4.8/5 Maravilloso (100 reviews)</p>
+                    <div class="price">$200 <span>Por noche</span></div>
+                    <a href="" class="default-btn">Reservar</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-sm-5">
+                  <ul class="info">
+                    <li>
+                      <i class="ri-wifi-line"></i>
+                      Wifi gratis
+                    </li>
+                    <li>
+                      <i class="ri-roadster-line"></i>
+                      Parking gratis
+                    </li>
+                    <li>
+                      <i class="ri-wheelchair-line"></i>
+                      Aire Acondicionado
+                    </li>
+                    <li>
+                      <i class="ri-restaurant-line"></i>
+                      Restaurante
+                    </li>
+                    <li>
+                      <i class="ri-riding-line"></i>
+                      Gym
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

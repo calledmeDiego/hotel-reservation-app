@@ -1,0 +1,61 @@
+<!-- search page -->
+<div class="page-title-area bg-1 ptb-100">
+  <div class="container">
+    <div class="page-title-content">
+      <h2>Hoteles en cualquier parte del mundo</h2>
+      <p>Buscar hoteles</p>
+      <form action="" class="banner-form-style">
+        <div class="row align-items-center">
+          <!-- LUGAR -->
+          <div class="col-xl-3 col-lg-6 col-sm-5">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Lugar</mat-label>
+              <input matInput placeholder="Hacia donde vas?" name="lugar" />
+              <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+          </div>
+
+          <!-- FECHA ENTRADA -->
+          <div class="col-xl-3 col-lg-6 col-sm-5">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Fecha Entrada</mat-label>
+              <input matInput [matDatepicker]="pickerEntrada" name="fechaEntrada" required />
+              <mat-hint>DD/MM/YYYY</mat-hint>
+              <mat-datepicker-toggle matIconSuffix [for]="pickerEntrada"> </mat-datepicker-toggle>
+              <mat-datepicker #pickerEntrada></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+          <!-- FECHA SALIDA -->
+          <div class="col-xl-3 col-lg-6 col-sm-5">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Fecha Salida</mat-label>
+              <input matInput [matDatepicker]="pickerSalida" name="fechaSalida" required />
+              <mat-datepicker-toggle matIconSuffix [for]="pickerSalida"> </mat-datepicker-toggle>
+              <mat-datepicker #pickerSalida></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+          <!-- PASAJEROS -->
+          <div class="col-lg-2 col-md-6">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Pasajeros</mat-label>
+              <input matInput placeholder="Agregar" name="pasajeros" />
+              <mat-icon matSuffix> person </mat-icon>
+            </mat-form-field>
+          </div>
+
+          <!-- BOTON BUSCAR -->
+          <div class="col-lg-1 col-md-12">
+            <button type="submit" class="src-btn">
+              <mat-icon> search </mat-icon>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<app-hotel-listing></app-hotel-listing>
